@@ -3,11 +3,20 @@ RefreshRateMultitool
 
 RefreshRateMultitool displays a sequence of easily distinguishable images at the rate of your monitor's refresh rate.
 
+This is a forked version of the original project found [here](https://github.com/shurcooL/RefreshRateMultitool). Main differences are:
+
+- Add ability to toggle between Windowed and Full Screen modes.
+- Ported to GLFW v3; reorganized code.
+- Add ".pro" Project File in order to compile with Qt's QMake tool.
+- Add Linux binary (Ubuntu Precise 12.04).
+
 ![RefreshRateMultitool in action, except the real thing runs much faster](https://dl.dropbox.com/u/8554242/dmitri/projects/RefreshRateMultitool/images/RefreshRateMultitool.gif)
 
-	Usage: RefreshRateMultitool.exe [columns rows]
-	 -columns - if specified, sets the number of columns, default 6
-	 -row     - if specified, sets the number of rows, default 1
+    Usage:
+        RefreshRateMultitool [<columns> <rows> <refresh rate>]
+        <columns> - [optional] sets the number of columns. Default: 6
+        <rows>    - [optional] sets the number of rows. Default: 1
+        <refresh rate> - [optional] specify the screen refresh rate. Default: 60
 
 This can be useful for a number of things:
 
